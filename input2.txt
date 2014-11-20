@@ -1,0 +1,18 @@
+0	LI	$v0, 4
+4	SW	$v0, 0($t5)
+8	LW	$t0, 0($t5)
+12	ADD	$t1, $t0, $t1
+16	SUBI	$t0, $t0, 1
+20	J	Loop
+24	LI	$v0, 4
+28	LI	$v0, 1
+32	MV	$a0, $t1
+36	LW	$t0, 0($t5)
+40	LW	$t1, 0($t5)
+44	ADDI	$t0, $t0, 1
+48	LI	$v0, 1
+52	LA	$t5, ($t1)
+56	LW	$a0, ($t5)
+60	LI	$v0, 1
+64	ADDI	$t2, $t2, -1
+68	ADDI	$t1, $t1, 4
