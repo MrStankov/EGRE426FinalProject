@@ -4,3 +4,7 @@
 WriteBack::WriteBack(){
 
 }
+
+WriteBack::WriteBack(struct Instruction &instruction){
+
+}
